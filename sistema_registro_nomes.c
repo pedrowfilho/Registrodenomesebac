@@ -114,7 +114,8 @@ char menu(){
 	printf("\tEscolha uma opção: \n\n");
 	printf("\t1 - Incluir\n");
 	printf("\t2 - Consultar\n");
-	printf("\t3 - Excluir\n\n");
+	printf("\t3 - Excluir\n");
+	printf("\t4 - Sair\n\n");
 }
 
 int main(){
@@ -142,6 +143,10 @@ int main(){
 				break;
 			case 3:
 				excluir();
+				break;
+			case 4:
+				printf("Obrigado por utulizar o sistema!");
+				return 0;
 				break;
 			default:
 				printf("\tOpção inválida!\n");
